@@ -1,85 +1,160 @@
 Serena - Tienda Online
 
-Proyecto universitario realizado en 2025 por tres compañeros.  
-*Serena* es una tienda de ropa distinta, creada para ofrecer prendas originales y diferentes de lo convencional.  
-Este proyecto combina HTML, CSS y JavaScript con buenas prácticas y conceptos aprendidos en clase.
+Proyecto universitario realizado en 2025 por tres compañeros.
+Serena es una tienda de ropa distinta, creada para ofrecer prendas originales y diferentes de lo convencional.
 
----
+Este trabajo busca simular un e-commerce funcional utilizando las tecnologías vistas en clase (HTML5, CSS3 y JavaScript ES6), aplicando buenas prácticas de programación, diseño responsivo, validaciones en formularios y almacenamiento de datos en el navegador.
 
-Descripción General:
-El proyecto simula un e-commerce de ropa con carrito de compras, formulario de contacto, modo oscuro/claro y página de presentación.  
-Incluye 4 páginas principales:
+🎯 Objetivos del Proyecto
 
-1. `index.html`  Página de inicio con los productos disponibles.  
-2. `carrito.html`  Página que muestra el carrito de compras.  
-3. `contacto.html`  Formulario de contacto con validaciones.  
-4. `acerca.html`  Página con la historia y descripción del proyecto.  
+Desarrollar una tienda online de ropa con funcionalidades reales de un e-commerce.
 
----
+Implementar un carrito de compras dinámico, capaz de agregar, modificar y eliminar productos.
 
-Tecnologías Usadas:
+Crear un formulario de contacto validado en tiempo real, con retroalimentación al usuario.
 
+Incorporar modo oscuro/claro con persistencia en el navegador.
+
+Asegurar un diseño atractivo, accesible y responsivo, adaptable a distintas pantallas.
+
+Fomentar el trabajo en equipo, organizando las tareas de diseño, maquetado y programación.
+
+📝 Descripción General
+
+La aplicación simula una tienda en línea llamada Serena, enfocada en ofrecer ropa con estilo propio y diferente a lo convencional.
+
+El sitio está compuesto por 4 páginas principales:
+
+index.html → Página de inicio donde se muestran los productos disponibles con sus imágenes, nombre, precio y botón para agregarlos al carrito.
+
+carrito.html → Vista del carrito de compras, donde el usuario puede ver sus productos, sumar/restar cantidades, eliminar ítems y calcular el total.
+
+contacto.html → Formulario de contacto validado con varios campos (nombre, email, teléfono, fecha de nacimiento, motivo, mensaje, etc.) y envío simulado mediante Fetch API.
+
+acerca.html → Página de presentación del proyecto, donde se cuenta la historia y la motivación de la tienda.
+
+*Requisitos Implementados
  HTML5
-- Estructura semántica con etiquetas (`header`, `nav`, `main`, `footer`).
-- Uso de `meta charset="UTF-8"` para soportar caracteres especiales.
-- Inclusión de favicon (`link rel="icon"`).
-- Formularios (`form`, `input`, `select`, `fieldset`, `legend`) con validaciones (`required`, `pattern`).
-- Imágenes de productos (`<img>`) con atributos `alt` para accesibilidad.
-- Botones con funciones integradas mediante `onclick`.
+
+Estructura semántica: uso de header, nav, main y footer en todas las páginas.
+
+Codificación universal: uso de meta charset="UTF-8" para soportar caracteres especiales en español.
+
+Favicon: icono de la tienda en la pestaña del navegador.
+
+Formularios completos:
+
+Inputs de diferentes tipos (text, email, tel, date, checkbox, radio, textarea, select).
+
+Validaciones con atributos como required, pattern y placeholder.
+
+Accesibilidad: todas las imágenes incluyen atributo alt.
+
+Botones interactivos: asociados a funciones dinámicas de JavaScript.
 
  CSS3
-- Fuente local y via conexion por google fonts por si la pagina no esta disponible.
-- Uso de variables CSS con `:root` para colores (`--bg`, `--text`, `--primary`, `--accent`).
-- Implementación de modo oscuro/claro con clases dinámicas.
-- Diseño responsivo con `grid` y media queries (`@media`).
-- Estilos avanzados:
-  - `transition`, `transform`, `hover` para animaciones suaves.
-  - Botones estilizados con bordes redondeados.
-  - Sombra (`box-shadow`) en tarjetas y formulario.
-  - Estilización del carrito con ítems en rectángulos e imágenes pequeñas a la izquierda.
-  - Formulario con inputs estilizados y resaltados al hacer focus.
-- Footer y header uniformes en todas las páginas.
+
+Variables CSS: definidas en :root para manejar colores base (--bg, --text, --primary, --accent, --danger).
+
+Modo oscuro/claro: aplicado mediante la clase dark y cambio dinámico de estilos.
+
+Diseño responsivo: uso de grid, flexbox y @media queries para adaptar el diseño a distintas resoluciones (desktop, tablet y móvil).
+
+Estilos avanzados:
+
+Transiciones suaves con transition y transform.
+
+Botones estilizados con bordes redondeados y efectos hover.
+
+Sombra (box-shadow) en tarjetas de productos y formularios.
+
+Carrito con ítems organizados en rectángulos, con miniaturas de imágenes, nombre, precio y botones de acción.
+
+Formulario estilizado, con inputs que resaltan en :focus.
+
+Unificación visual: el header y footer son iguales en todas las páginas, con enlaces de navegación y redes sociales.
 
  JavaScript (ES6)
-- Uso de `addEventListener("DOMContentLoaded")` para iniciar la lógica cuando carga la página.
-- Carrito de compras:
-  - Guardado en LocalStorage (`localStorage.setItem`, `getItem`, `removeItem`).
-  - Funciones para agregar productos, incrementar/decrementar cantidad y eliminar.
-  - Render dinámico de la lista de productos con botones (+, -, eliminar).
-  - Cálculo automático del total con `reduce()`.
-- Notificaciones flotantes al agregar productos al carrito.
-- Modo oscuro/claro:
-  - Cambio de clase `dark` en `body`.
-  - Ícono dinámico 🌙/☀️ en el botón.
-  - Persistencia del modo en `localStorage`.
-- Formulario de contacto:
-  - Validación en tiempo real con `checkValidity()`.
-  - Mensajes de error personalizados debajo de cada campo.
-  - Envío simulado usando *Fetch API* hacia `https://jsonplaceholder.typicode.com/posts`.
-  - Mensajes dinámicos de éxito o error.
 
----
+Ejecución controlada: uso de addEventListener("DOMContentLoaded") para asegurar que la lógica se ejecute después de que cargue la página.
+
+Carrito de compras:
+
+Persistencia con localStorage.
+
+Funciones para agregar productos, incrementar o decrementar cantidad y eliminar.
+
+Renderizado dinámico de la lista de productos.
+
+Cálculo automático del total usando reduce().
+
+Notificaciones flotantes: al agregar un producto, aparece un mensaje animado en la pantalla.
+
+Modo oscuro/claro:
+
+Botón de alternancia con ícono 🌙/☀️ dinámico.
+
+Guardado de la preferencia en localStorage para mantenerla al recargar.
+
+Formulario de contacto:
+
+Validación en tiempo real con checkValidity().
+
+Mensajes de error personalizados debajo de cada campo.
+
+Envío simulado con Fetch API hacia https://jsonplaceholder.typicode.com/posts.
+
+Mensajes dinámicos de confirmación o error de red.
 
 Estructura del Proyecto
 .
-├── index.html Página principal (productos)
-├── carrito.html Carrito de compras
-├── contacto.html Formulario de contacto
-├── acerca.html Descripción e historia
+├── index.html          Página principal
+├── carrito.html         Carrito de compras
+├── contacto.html        Formulario de contacto
+├── acerca.html          Descripción e historia
 ├── css/
-│ └── styles.css Estilos globales
+│   └── styles.css       Estilos globales
 ├── js/
-│ ├── main.js Modo oscuro + carrito básico + notificaciones
-│ ├── carrito.js Lógica de renderizado y control del carrito
-│ └── form.js Validación y envío del formulario
+│   ├── main.js          Modo oscuro + carrito básico + notificaciones
+│   ├── carrito.js       Lógica del carrito
+│   └── form.js          Validación y envío del formulario
 └── assets/
-└── images/
-├── favicon.ico
-├── remera.webp
-├── zapas.webp
-├── buzo.jpg
-├── pantalones.jpg
-└── readme.txt
+    ├── images/          Imágenes de productos + favicon + redes
+    └── RobotoFlex-VariableFont.ttf   Fuente
 
+Funcionalidades Destacadas
 
-Integrantes del Grupo : Rafael Cruz, Francisco Risso, Facundo Romero.
+Carrito persistente
+
+El usuario puede cerrar la pestaña y al volver a abrir el carrito, sus productos seguirán allí gracias a localStorage.
+
+Se actualizan cantidades, subtotales y total de forma automática.
+
+Validación en tiempo real del formulario
+
+El formulario indica al instante si los datos son inválidos.
+
+Se asegura que todos los campos requeridos estén completos antes de enviar.
+
+El envío muestra mensajes dinámicos (✅ éxito o ❌ error).
+
+Modo oscuro/claro
+
+El usuario puede alternar entre ambos modos.
+
+Se recuerda la preferencia al recargar la página.
+
+Diseño moderno y responsivo
+
+Uso de tipografía clara y minimalista.
+
+Grid de productos adaptable a pantallas grandes, medianas y móviles.
+
+Footer con enlaces de navegación y redes sociales.
+
+Integrantes del Grupo
+
+Rafael Cruz 
+Francisco Risso 
+Facundo Romero
+
