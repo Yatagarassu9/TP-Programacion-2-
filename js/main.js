@@ -22,7 +22,7 @@ if (toggle) {
   });
 }
 
-// Carrito básico sin imágenes
+
 function agregarCarrito(nombre, precio) {
   let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
   const index = carrito.findIndex(p => p.nombre === nombre);

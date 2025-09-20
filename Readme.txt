@@ -28,6 +28,7 @@ Tecnologías Usadas:
 - Botones con funciones integradas mediante `onclick`.
 
  CSS3
+- Fuente local y via conexion por google fonts por si la pagina no esta disponible.
 - Uso de variables CSS con `:root` para colores (`--bg`, `--text`, `--primary`, `--accent`).
 - Implementación de modo oscuro/claro con clases dinámicas.
 - Diseño responsivo con `grid` y media queries (`@media`).

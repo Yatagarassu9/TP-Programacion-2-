@@ -23,7 +23,7 @@ html, body {
   color: var(--text);
 }
 
-/* -------- Header -------- */
+
 header {
   padding: 0.8rem 1.5rem;
   background: var(--primary);
@@ -43,7 +43,7 @@ header {
   height: 80px;
 }
 
-/* Links centrados */
+
 .nav-centro {
   flex: 1;
   display: flex;
@@ -81,19 +81,19 @@ header {
   color: var(--primary);
 }
 
-/* Botón modo a la derecha */
+
 .modo-derecha {
   display: flex;
   align-items: center;
 }
 
-/* -------- Main -------- */
+
 main {
   flex: 1;
   padding: 20px;
 }
 
-/* Centrado solo en contacto */
+
 .contacto-main {
   display: flex;
   justify-content: center;
@@ -164,7 +164,7 @@ footer {
   opacity: 0.8;
 }
 
-/* -------- Productos -------- */
+
 .productos {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -204,7 +204,7 @@ footer {
   font-size: 1rem;
 }
 
-/* -------- Botones -------- */
+
 button {
   background: var(--accent);
   color: white;
@@ -257,7 +257,7 @@ button:hover {
   gap: 10px;
 }
 
-/* -------- Notificación -------- */
+
 .notificacion {
   position: fixed;
   top: 20px;
@@ -276,7 +276,7 @@ button:hover {
   opacity: 1;
 }
 
-/* -------- Formulario -------- */
+
 .form-card {
   display: flex;
   flex-direction: column;
@@ -317,7 +317,7 @@ form input:focus, form select:focus, form textarea:focus {
   outline: none;
 }
 
-/* fieldset */
+
 fieldset {
   border: 1px solid #ccc;
   border-radius: 8px;
@@ -335,7 +335,7 @@ legend {
   margin-top: 6px;
 }
 
-/* check de términos */
+
 .terminos {
   flex-direction: row !important;
   align-items: center;
@@ -373,23 +373,21 @@ legend {
   font-size: 0.85rem;
 }
 
-/* -------- Responsive -------- */
 
-/* 🌐 PC de escritorio grande (más de 1200px) */
 @media (min-width: 1200px) {
   .productos {
     grid-template-columns: repeat(4, 1fr);
   }
 }
 
-/* 💻 Laptops (entre 992px y 1199px) */
+
 @media (max-width: 1199px) and (min-width: 992px) {
   .productos {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
-/* 📱 Tablets (hasta 768px) */
+
 @media (max-width: 768px) {
   header {
     flex-direction: column;
@@ -411,7 +409,7 @@ legend {
   }
 }
 
-/* 📞 Celulares chicos (menos de 480px) */
+
 @media (max-width: 480px) {
   .productos {
     grid-template-columns: 1fr;
