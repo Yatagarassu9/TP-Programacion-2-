@@ -5,7 +5,7 @@ Serena es una tienda de ropa distinta, creada para ofrecer prendas originales y 
 
 Este trabajo busca simular un e-commerce funcional utilizando las tecnologías vistas en clase (HTML5, CSS3 y JavaScript ES6), aplicando buenas prácticas de programación, diseño responsivo, validaciones en formularios y almacenamiento de datos en el navegador.
 
-🎯 Objetivos del Proyecto
+Objetivos del Proyecto
 
 Desarrollar una tienda online de ropa con funcionalidades reales de un e-commerce.
 
@@ -19,7 +19,7 @@ Asegurar un diseño atractivo, accesible y responsivo, adaptable a distintas pan
 
 Fomentar el trabajo en equipo, organizando las tareas de diseño, maquetado y programación.
 
-📝 Descripción General
+Descripción General
 
 La aplicación simula una tienda en línea llamada Serena, enfocada en ofrecer ropa con estilo propio y diferente a lo convencional.
 
