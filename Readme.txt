@@ -1,11 +1,11 @@
-Serena - Tienda Online
+Serena - Tienda Online:
 
 Proyecto universitario realizado en 2025 por tres compañeros.
 Serena es una tienda de ropa distinta, creada para ofrecer prendas originales y diferentes de lo convencional.
 
 Este trabajo busca simular un e-commerce funcional utilizando las tecnologías vistas en clase (HTML5, CSS3 y JavaScript ES6), aplicando buenas prácticas de programación, diseño responsivo, validaciones en formularios y almacenamiento de datos en el navegador.
 
-Objetivos del Proyecto
+Objetivos del Proyecto:
 
 Desarrollar una tienda online de ropa con funcionalidades reales de un e-commerce.
 
@@ -19,7 +19,7 @@ Asegurar un diseño atractivo, accesible y responsivo, adaptable a distintas pan
 
 Fomentar el trabajo en equipo, organizando las tareas de diseño, maquetado y programación.
 
-Descripción General
+Descripción General:
 
 La aplicación simula una tienda en línea llamada Serena, enfocada en ofrecer ropa con estilo propio y diferente a lo convencional.
 
@@ -34,7 +34,7 @@ contacto.html → Formulario de contacto validado con varios campos (nombre, ema
 acerca.html → Página de presentación del proyecto, donde se cuenta la historia y la motivación de la tienda.
 
 *Requisitos Implementados
- HTML5
+HTML5:
 
 Estructura semántica: uso de header, nav, main y footer en todas las páginas.
 
@@ -52,7 +52,7 @@ Accesibilidad: todas las imágenes incluyen atributo alt.
 
 Botones interactivos: asociados a funciones dinámicas de JavaScript.
 
- CSS3
+CSS3:
 
 Variables CSS: definidas en :root para manejar colores base (--bg, --text, --primary, --accent, --danger).
 
@@ -74,11 +74,11 @@ Formulario estilizado, con inputs que resaltan en :focus.
 
 Unificación visual: el header y footer son iguales en todas las páginas, con enlaces de navegación y redes sociales.
 
- JavaScript (ES6)
+ JavaScript (ES6):
 
 Ejecución controlada: uso de addEventListener("DOMContentLoaded") para asegurar que la lógica se ejecute después de que cargue la página.
 
-Carrito de compras:
+Carrito de compras
 
 Persistencia con localStorage.
 
@@ -122,7 +122,7 @@ Estructura del Proyecto
     ├── images/          Imágenes de productos + favicon + redes
     └── RobotoFlex-VariableFont.ttf   Fuente
 
-Funcionalidades Destacadas
+Funcionalidades Destacadas:
 
 Carrito persistente
 
@@ -152,8 +152,7 @@ Grid de productos adaptable a pantallas grandes, medianas y móviles.
 
 Footer con enlaces de navegación y redes sociales.
 
-Integrantes del Grupo
-
+Integrantes del Grupo:
 Rafael Cruz 
 Francisco Risso 
 Facundo Romero
