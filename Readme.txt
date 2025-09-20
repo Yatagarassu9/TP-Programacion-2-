@@ -80,3 +80,6 @@ Estructura del Proyecto
 ├── buzo.jpg
 ├── pantalones.jpg
 └── readme.txt
+
+
+Integrantes del Grupo : Rafael Cruz, Francisco Risso, Facundo Romero.
